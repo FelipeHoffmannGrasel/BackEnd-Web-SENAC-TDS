@@ -1,0 +1,36 @@
+{
+    "Medicamento": [
+        {
+            "id": 1,
+            "nome": "Buscopal",
+            "fabricante": "Fármacia",
+            "preco": 99.99,
+            "quantidade": 1
+        }
+    ],
+    "Cliente": [
+        {
+            "id": 1,
+            "nome": "Gina",
+            "endereco": "Logo ali",
+            "email": "Ginava@gmail.com",
+            "telefone": "70707-7070"
+        }
+    ],
+    "Fornecedor": [
+        {
+            "id": 1,
+            "nome": "Zé da Canja",
+            "endereco": "Casa do kct",
+            "telefone": "12345-6789"
+        }
+    ],
+    "Venda":[
+        {
+            "id": 1,
+            "data": "29/04/3001",
+            "id_medicamento": 1,
+            "id_cliente": 1
+        }
+    ]
+}

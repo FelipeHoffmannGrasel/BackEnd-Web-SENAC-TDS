@@ -1,0 +1,22 @@
+{
+    "user":[
+        {
+            "id": 1,
+            "nome": "teste",
+            "idade": 20,
+            "curso": "backend web"
+        },
+        {
+            "id":2,
+            "nome": "teste dois",
+            "idade": 20,
+            "curso": "backend web"
+        }
+    ],
+    "cursos":[
+        {
+            "id":1,
+            "nome_curso": "TDS"
+        }
+    ]
+}
