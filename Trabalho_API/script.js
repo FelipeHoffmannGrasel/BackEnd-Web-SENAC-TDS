@@ -37,6 +37,7 @@ function listCars() {
 
 function showCarDetails(carId) {
     window.location.href = `edit-car.html?id=${carId}`; 
+    console.log(window.location.href)
 }
 
 function deleteCar(carId) {

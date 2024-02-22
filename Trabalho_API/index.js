@@ -17,7 +17,7 @@ server.delete('/carros/:id', (req, res) => {
         dados.carros.splice(indiceRemocao, 1);
 
         dados.carros.forEach((car, index) => {
-            carros.id = index + 1;
+            car.id = index + 1;
         });
 
         salvarDados(dados);

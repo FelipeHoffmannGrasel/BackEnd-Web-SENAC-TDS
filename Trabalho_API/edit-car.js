@@ -1,4 +1,6 @@
 const carList = document.getElementById('car-list');
+const params = new URLSearchParams(window.location.search);
+const carId = params.get('id');
 
 function listCars() {
     fetch('http://localhost:4000/carros')
@@ -7,22 +9,28 @@ function listCars() {
             carList.innerHTML = '';
 
             data.forEach(car => {
-                const li = document.createElement('li');
-                li.className = 'car-list-item';
-                li.innerHTML = `
-                    <div class='car-card'>
-                        <div class="car-image">
-                            <img src="${car.img}" alt="${car.name} Image">
-                        </div>
-                        <div class="car-info">
-                            <p>${car.name}</p>
-                            <p>Pilotos: ${car.pilots}</p> 
-                            <p>Equipe: ${car.team}</p>
-                        </div>
-                    <div/>
-                `;
-                li.dataset.carId = car.id;
-                carList.appendChild(li);
+                if(car.id == carId){
+                    const li = document.createElement('li');
+                    li.className = 'car-list-item';
+                    li.innerHTML = `
+                        <div class='car-card'>
+                            <div class="car-image">
+                                <img src="${car.img}" alt="${car.name} Image">
+                            </div>
+                            <div class="car-info">
+                                <p>${car.name}</p>
+                                <p>Pilotos: ${car.pilots}</p> 
+                                <p>Equipe: ${car.team}</p>
+                            </div>
+                        <div/>
+                    `;
+                    li.dataset.carId = car.id;
+                    li.addEventListener('click', () => {
+                        // Chama a função para exibir o carro selecionado para edição
+                        displayEditForm(car);
+                    });
+                    carList.appendChild(li);
+                }
             });
         })
         .catch(error => console.error('Erro:', error));

@@ -6,30 +6,30 @@
         "description": "API para cadastro e edição de carros de F1"
     },
     "paths": {
-        "/usuarios": {
+        "/carros": {
             "get": {
                 "summary": "Obter a lista de carros",
                 "responses": {
                     "200": {
-                        "description": "Lista de  retornada com sucesso"
+                        "description": "Lista de retornada com sucesso"
                     }
                 }
             },
             "post": {
-                "summary": "Criar um novo usuário",
+                "summary": "Criar um novo carro",
                 "requestBody": {
                     "required": true,
                     "content": {
                         "application/json": {
                             "schema": {
-                                "$ref": "#/components/schemas/Usuario"
+                                "$ref": "#/components/schemas/Carros"
                             }
                         }
                     }
                 },
                 "responses": {
                     "201": {
-                        "description": "Usuário criado com sucesso"
+                        "description": "Carro criado com sucesso"
                     },
                     "400": {
                         "description": "Dados inválidos fornecidos"
@@ -37,9 +37,9 @@
                 }
             }
         },
-        "/usuarios/{id}": {
+        "/carros/{id}": {
             "get": {
-                "summary": "Obter informações de um usuário pelo ID",
+                "summary": "Obter informações de um carro por ID",
                 "parameters": [
                     {
                         "name": "id",
@@ -52,15 +52,15 @@
                 ],
                 "responses": {
                     "200": {
-                        "description": "Informações do usuário retornadas com sucesso"
+                        "description": "Informações do carro retornadas com sucesso"
                     },
                     "404": {
-                        "description": "Usuário não encontrado"
+                        "description": "Carro não encontrado"
                     }
                 }
             },
             "put": {
-                "summary": "Atualizar informações de um usuário pelo ID",
+                "summary": "Atualizar informações de um carro pelo ID",
                 "parameters": [
                     {
                         "name": "id",
@@ -76,22 +76,22 @@
                     "content": {
                         "application/json": {
                             "schema": {
-                                "$ref": "#/components/schemas/Usuario"
+                                "$ref": "#/components/schemas/Carros"
                             }
                         }
                     }
                 },
                 "responses": {
                     "200": {
-                        "description": "Informações do usuário atualizadas com sucesso"
+                        "description": "Informações do carro atualizadas com sucesso"
                     },
                     "404": {
-                        "description": "Usuário não encontrado"
+                        "description": "Carro não encontrado"
                     }
                 }
             },
             "delete": {
-                "summary": "Excluir um usuário pelo ID",
+                "summary": "Excluir um carro pelo ID",
                 "parameters": [
                     {
                         "name": "id",
@@ -104,10 +104,10 @@
                 ],
                 "responses": {
                     "204": {
-                        "description": "Usuário excluído com sucesso"
+                        "description": "Carro excluído com sucesso"
                     },
                     "404": {
-                        "description": "Usuário não encontrado"
+                        "description": "Carro não encontrado"
                     }
                 }
             }
@@ -115,15 +115,20 @@
     },
     "components": {
         "schemas": {
-            "Usuario": {
+            "Carros": {
                 "type": "object",
                 "properties": {
-                    "nome": {
+                    "name": {
                         "type": "string"
                     },
-                    "email": {
-                        "type": "string",
-                        "format": "email"
+                    "pilots": {
+                        "type": "string"
+                    },
+                    "team": {
+                        "type": "string"
+                    },
+                    "img": {
+                        "type": "string"
                     }
                 }
             }

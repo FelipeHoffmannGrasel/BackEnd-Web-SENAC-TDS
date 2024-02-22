@@ -80,7 +80,13 @@ h1 {
     border-radius: 25px;
     text-align: center;
     margin: 10px;
-    color: white
+    color: white;
+    width: 398px;
+}
+
+.car-image {
+    width: 100%;
+    text-align: center;
 }
 
 .car-item {
