@@ -26,7 +26,6 @@ function listCars() {
                     `;
                     li.dataset.carId = car.id;
                     li.addEventListener('click', () => {
-                        // Chama a função para exibir o carro selecionado para edição
                         displayEditForm(car);
                     });
                     carList.appendChild(li);
@@ -42,11 +41,10 @@ const editCarForm = document.getElementById('edit-car-form');
 
 editCarForm.addEventListener('submit', (e) => {
     e.preventDefault();
-    const editedName = document.getElementById('edit-name').value;
+    const editedName   = document.getElementById('edit-name').value;
     const editedPilots = document.getElementById('edit-pilots').value;
-    const editedTeam = document.getElementById('edit-team').value;
+    const editedTeam   = document.getElementById('edit-team').value;
 
-    // Obtenha o ID do carro da URL
     const params = new URLSearchParams(window.location.search);
     const carId = params.get('id');
 
@@ -64,7 +62,6 @@ editCarForm.addEventListener('submit', (e) => {
         return response.json();
     })
     .then(() => {
-        // Redireciona de volta para a lista de carros após a edição
         window.location.href = 'index.html';
     })
     .catch(error => console.error('Erro:', error));

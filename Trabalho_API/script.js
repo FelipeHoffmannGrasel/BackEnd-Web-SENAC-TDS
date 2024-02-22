@@ -61,10 +61,10 @@ function deleteCar(carId) {
 
 carForm.addEventListener('submit', (e) => {
     e.preventDefault();
-    const name = document.getElementById('name').value;
+    const name   = document.getElementById('name').value;
     const pilots = document.getElementById('pilots').value;
-    const team = document.getElementById('team').value;
-    const img = document.getElementById('img').value;
+    const team   = document.getElementById('team').value;
+    const img    = document.getElementById('img').value;
 
     fetch('http://localhost:4000/carros', {
         method: 'POST',

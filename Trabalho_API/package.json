@@ -243,6 +243,7 @@
     "strip-ansi": "^7.1.0",
     "strip-ansi-cjs": "^6.0.1",
     "supports-color": "^5.5.0",
+    "swagger-ui-express": "^5.0.0",
     "sync-content": "^1.0.2",
     "tap-parser": "^15.3.1",
     "tap-yaml": "^2.2.1",
