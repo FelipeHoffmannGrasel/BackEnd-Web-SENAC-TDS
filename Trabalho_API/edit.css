@@ -1,0 +1,53 @@
+/* styles.css */
+
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(30, 30, 30);
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: white
+}
+
+#edit-car-form {
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+
+#edit-car-form input {
+    width: 50%;
+    margin: 10px;
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 10px;
+    align-self: center;
+    justify-self: center;
+    border: none;
+    background-color: white;
+    color: black
+}
+
+#add-car {
+    width: 30%;
+    margin: 10px;
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: none;
+    align-self: center;
+    justify-self: center;
+    background-color: #007bff;
+    color: white
+}

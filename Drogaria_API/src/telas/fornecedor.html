@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciamento de Fornecedores</title>
+</head>
+<body>
+    <header>
+        <h1>Gerenciamento de Fornecedores</h1>
+    </header>
+    
+    <main>
+        <form id="formAdicionarFornecedor">
+            <h2>Adicionar Fornecedor</h2>
+
+            <label for="idFornecedor">ID:</label>
+            <input type="number" id="idFornecedor" required>
+
+            <label for="nomeFornecedor">Nome:</label>
+            <input type="text" id="nomeFornecedor" required>
+            
+            <label for="enderecoFornecedor">Endereço:</label>
+            <input type="text" id="enderecoFornecedor" required>
+            
+            <label for="telefoneFornecedor">Telefone:</label>
+            <input type="text" id="telefoneFornecedor" required>
+        
+            <button type="button" onclick="adicionarFornecedor()">Adicionar</button>
+        </form>
+    </main>
+
+    <section>
+        <h2>Lista de Fornecedores:</h2>
+        <ul id="listaFornecedores"></ul>
+    </section>
+
+    <script src="../clients/fornecedores.js"></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carros F1</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Carros da F1</h1>
+    
+    <!-- Formulário para adicionar música -->
+    <form id="car-form">
+        <input type="text" id="name" required placeholder="Nome do carro">
+        
+        <input type="text" id="pilots" required placeholder="Pilotos">
+        
+        <input type="text" id="team" required placeholder="Equipe">
+
+        <input type="text" id="img" required placeholder="Foto do carro">
+    
+        <button type="submit" id="add-car">Adicionar carro</button>
+    </form>
+
+    <h1>Carros adicionados</h1>
+    <ul id="car-list" class="car-list"></ul>
+    
+    <script src="script.js"></script>
+</body>
+</html>

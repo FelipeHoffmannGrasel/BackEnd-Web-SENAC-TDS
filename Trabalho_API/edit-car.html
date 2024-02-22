@@ -1,0 +1,37 @@
+<!-- edit-car.html -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="edit.css">
+    <title>Editar o Carro</title>
+</head>
+<body>
+    <h1>Carros adicionados</h1>
+    <ul id="car-list" class="car-list"></ul>
+
+
+    <h1>Editar o Carro</h1>
+    
+    <!-- Formulário para edição de carro -->
+    <form id="edit-car-form">
+        <input type="text" id="edit-name" required placeholder="Nome">
+        
+        <input type="text" id="edit-pilots" required placeholder="Pilotos">
+        
+        <input type="text" id="edit-team" required placeholder="Equipe">
+    
+        <button type="submit" id="add-car">Salvar Alterações</button>
+        <button class="back-button" id='add-car' onclick="goBack()">Voltar</button>
+    </form>
+
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+    
+    <script src="edit-car.js"></script>
+</body>
+</html>

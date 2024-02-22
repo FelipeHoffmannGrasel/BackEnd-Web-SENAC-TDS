@@ -1,0 +1,48 @@
+<Clientes>
+    <Cliente>
+        <id>1</id>
+        <nome>Cliente 1</nome>
+        <endereco>End 1</endereco>
+        <email>email1@gmail.com</email>
+        <Telefone>3592-0101</Telefone>
+    </Cliente>
+    <Cliente>
+        <id>2</id>
+        <nome>Cliente 2</nome>
+        <endereco>End 2</endereco>
+        <email>email2@gmail.com</email>
+        <telefone>3592-0202</telefone>
+    </Cliente>
+    <Cliente>
+        <id>3</id>
+        <nome>Cliente 3</nome>
+        <endereco>End 3</endereco>
+        <email>email3@gmail.com</email>
+        <telefone>3592-0303</telefone>
+    </Cliente>
+    <Cliente>
+        <id>4</id>
+        <nome>Cliente 4</nome>
+        <endereco>End 4</endereco>
+        <email>email4@gmail.com</email>
+        <telefone>3592-0404</telefone>
+    </Cliente>
+    <Cliente>
+        <nome>sjfhskjfs</nome>
+        <endereco>fsoijfslj</endereco>
+        <email>FSLDFLSJ</email>
+        <telefone>28427834</telefone>
+    </Cliente>
+    <Cliente>
+        <nome>kjhksjdf</nome>
+        <endereco>fsdfjs</endereco>
+        <email>fsdfs</email>
+        <telefone>2842934</telefone>
+    </Cliente>
+    <Cliente>
+        <nome>kjhksjdf</nome>
+        <endereco>fsdfjs</endereco>
+        <email>fsdfs</email>
+        <telefone>2842934</telefone>
+    </Cliente>
+</Clientes>
