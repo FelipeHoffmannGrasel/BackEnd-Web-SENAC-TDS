@@ -61,7 +61,7 @@ editCarForm.addEventListener('submit', (e) => {
         }
         return response.json();
     })
-    .then(() => {
+        .then(() => {
         window.location.href = 'index.html';
     })
     .catch(error => console.error('Erro:', error));
